@@ -59,6 +59,14 @@ h1 {
   content: url(images/alex-glow.png);
 }
 
+#profile {
+  padding-top: 50px;
+}
+
+#hide {
+  visibility:hidden;
+}
+
 /* classes declarations */
 .icon-big,
 .icon-small,
@@ -71,6 +79,7 @@ h1 {
 .website {
   margin-top: 15px;
   margin-bottom: 15px;
+  border:1 black
 }
 
 .container {
