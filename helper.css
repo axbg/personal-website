@@ -1,5 +1,13 @@
+/* tags custom properties */
 html {
   scroll-behavior: smooth;
+  user-select: none;
+}
+
+body {
+  background-color: orange;
+  margin: 0;
+  text-align: center;
 }
 
 a:hover,
@@ -10,27 +18,8 @@ h1:hover {
 
 a,
 h1 {
-  transition: color 0.5s ease;
+  transition: 0.5s ease;
   cursor: pointer;
-}
-
-.icon-big,
-.icon-small,
-.scrollmenu a {
-  text-decoration: none;
-}
-
-body {
-  background-color: orange;
-  margin: 0;
-  text-align: center;
-}
-
-.photos,
-.photos-big,
-.website {
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 a {
@@ -40,6 +29,48 @@ a {
 h1 {
   font-size: 50px;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+/* scrollbar custom properties */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+  cursor: pointer;
+}
+
+/* id declarations */
+#avatar {
+  max-width: 350px;
+  max-height: 450px;
+}
+
+#avatar:hover {
+  content: url(images/alex-glow.png);
+}
+
+/* classes declarations */
+.icon-big,
+.icon-small,
+.scrollmenu a {
+  text-decoration: none;
+}
+
+.photos,
+.photos-big,
+.website {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .container {
@@ -73,15 +104,6 @@ h1 {
 
 .col-sp {
   flex: 1.2;
-}
-
-#avatar {
-  max-width: 350px;
-  max-height: 450px;
-}
-
-#avatar:hover {
-  content: url(images/alex-glow.png);
 }
 
 .icon-big {
@@ -130,7 +152,34 @@ h1 {
   background-color: #000;
 }
 
-@media screen and (max-width: 800px) {
+/* navbar properties */
+.navigation {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.navigation > h1 {
+  float: left;
+  margin-left: 15px;
+  font-size: 1em;
+}
+
+.navigation > a {
+  float: right;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.navigation > a:hover {
+  color: white;
+}
+
+/* media queries */
+@media screen and (max-width: 911px) {
   #avatar {
     max-width: 200px;
     max-height: 250px;
