@@ -1,4 +1,4 @@
-# [Personal Website Example](https://axbg.github.io/personal_website/)
+# [Personal Website Example](https://axbg.github.io/personal-website/)
 #### A simple presentation website created without JavaScript as an exercise
 #### Layout implemented using [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [Font Awesome](https://fontawesome.com/)
 #### Almost nailed the general Audits report
